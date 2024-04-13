@@ -1,45 +1,81 @@
-
-
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 .ant-col-16 {
-  /* --ant-display: block; */
-  /* display: block; */
-  display: var(--ant-display);
-  flex: 1 !important;
-  max-width: 100%;
+    /* --ant-display: block; */
+    /* display: block; */
+    display: var(--ant-display);
+    flex: 1 !important;
+    max-width: 100%;
 }
 
-.ant-btn-primary{
-  background-color: green !important;
+.ant-btn-primary {
+    background-color: green !important;
 }
 
-.activeArrow::after{
-  content: ' ';
-  right: -15px;
-  z-index: 1;
-  position: absolute;
-  width: 30px;
-  transform: rotate(45deg);
-  height: 30px;
-  background: #d0f7fa;
+.activeArrow::after {
+    content: ' ';
+    right: -15px;
+    z-index: 1;
+    position: absolute;
+    width: 30px;
+    transform: rotate(45deg);
+    height: 30px;
+    background: #d0f7fa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (prefers-blueuced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.gradient-background {
+    height: 100vh;
+    background: linear-gradient(62deg, #525fee, #000000, #000000, #001bc9, #000000, #000000);
+    /* background: linear-gradient(62deg, #EE7752, #000000, #000000, #c90000, #000000, #000000); */
+    animation: gradient 60s ease infinite;
+    background-size: 400% 400%;
+
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

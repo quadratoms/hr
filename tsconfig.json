@@ -22,5 +22,6 @@
   },
   "include": [
     "src"
-  ]
+  ],
+  "outDir":"C:\\Users\\tquadri\\Documents\\projects\\banking-app-api\\dist\\frontend"
 }
